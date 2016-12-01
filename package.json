@@ -1,0 +1,20 @@
+{
+  "name": "dungeon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch & npm run server",
+    "watch": "watchify js/index.js -d -t babelify -o build/game.js",
+    "server": "http-server ./"
+  },
+  "author": "Geoff Kimball <gakon5@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "http-server": "^0.8.5",
+    "phaser": "^2.4.4",
+    "uglifyjs": "^2.4.10"
+  }
+}
